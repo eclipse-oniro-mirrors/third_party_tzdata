@@ -82,7 +82,6 @@ print("compile done")
  
 zone_compactor = os.path.join(script_path, "zone_compactor.py")
 config_file = os.path.join(script_path, "..", "..", "data", "prebuild", "normal", "timezone_list.cfg")
-#subprocess.run(["python3", zone_compactor, config_file, posix_path, output_path, "tzdata2026e"], check=True)
 ZoneCompactor(config_file, posix_path, output_path, "tzdata2026e")
 
 print("package done")
